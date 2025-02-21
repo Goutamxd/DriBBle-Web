@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+#nav-pt1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+#nav-pt1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    font-family:"gilroy";
+}
+#nav img{
+    height: 55px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#nav-pt2 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 30%;
+    gap: 40px;
+}
+#nav-pt2 button{
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+#nav-pt2 #login{
+    background-color: #fff;
+    color: black;
+    font-weight: 500;
+    position: relative;
+
+}
+#nav-pt2 #login::after{
+    content: "";
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+#centre{
+    width: 100%;
+    height: 69%;
+    text-align: center;
+    padding: 80px 0;
+}
+#centre h3{
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #D9B9F1;
+    border-radius: 50px;
+    font-family: "Source Serif 4";
+    font-weight: 500;
+    font-size: 17px;
+}
+#centre h1{
+    font-size: 70px;
+    font-family: "Source Serif 4";
+    line-height: 75px;
+    margin-top: 40px;
+    font-weight: 500;
+}
+#centre h4{
+    font-size: 20px;
+    font-family: "Mona Sans";
+    font-weight: 900;
+    margin: 30px;
+}
+#centre button{
+    padding: 20px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+#slider{
+    height: 48%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+#slider::-webkit-scrollbar{ 
+    display: none;
+}
+.bottom{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    animation-name:scroller ;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroller {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.bottom .elem{ 
+    position: relative;
+    height: 100%;
+    width: 18%;
+    border-radius: 35px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 13px;
+}
+.bottom .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.bottom .elem video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} 
+.bottom .elem .overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 250px;
+    padding-left: 20px;
+}
+.overlay h4{
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+}
+.overlay button{
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px;    
+    border: 1px solid rgba(255, 255, 255, 0.375);
+    margin-top: 15px;
+    margin-right: 3px;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    padding: 60px 150px;
+}
+#brands{
+    width: 100%;
+    height: 50px;
+}
+#brands img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#pg2-bottom{
+    height: 95%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.53);
+
+}
+#pg2-lf{
+    height: 100%;
+    width: 50%;
+}
+#pg2-lf h1{
+    font-size: 85px;
+    font-family: "Mona Sans";
+    font-weight: 600;
+    padding-top: 150px;
+
+}
+#pg2-rt{
+    height: 100%;
+    width: 50%;
+}
+#pg2-rt p{
+    padding-top: 180px;
+    font-size: 21px;
+    font-weight: 600;
+    font-family: "Mona Sans";
+    line-height: 32px;
+}
+#pg2-rt button{
+    padding: 18px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+#page3{
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    padding-top: 140px;
+}
+#page3 h3{
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #FFDA79;
+    border-radius: 50px;
+    font-family: "Source Serif 4";
+    font-weight: 500;
+    font-size: 17px;
+}
+#page3 h1{
+    font-size: 60px;
+    font-family: "Source Serif 4";
+    line-height: 75px;
+    margin-top: 40px;
+    font-weight: 500;
+}
+#page3 h4{
+    font-size: 20px;
+    font-family: "Mona Sans";
+    font-weight: 900;
+    margin: 30px;
+    line-height: 40px;
+}
+
+#page3 #pg3-bottom{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 150px;
+    margin-bottom: 100px;
+}
+#pg3-lf{
+    height: 100%;
+    width: 50%;
+    text-align: left;
+}
+#pg3-lf h1{
+    font-size: 50px;
+    font-family: "Mona Sans";
+    font-weight: 600;
+    line-height: 60px;
+    margin-top: 150px;
+}
+#pg3-lf p{
+    font-size: 17px;
+    font-family: "Mona Sans";
+    font-weight: 600;
+    margin-top: 20px; 
+    line-height: 25px;
+}
+#pg3-lf button{
+    padding: 18px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+#pg3-lf #pg3-btn{
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(128, 128, 128, 0.474);
+}
+#pg3-lf #pg3-card{
+    position: absolute;
+    right: 12%;
+    bottom: -13%;
+    height: 260px;
+    width: 240px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.192);
+    padding: 30px;
+}
+#pg3-card #card-row{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#card-lf{
+    height: 100%;
+    width: 35%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#card-lf img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#card-rt{
+    height: 100%;
+    width: 65%;
+    padding: 0 10px;
+}
+#card-rt h6{
+    font-size: 18px;
+    font-family: "Mona Sans";
+    font-weight: 700; 
+}
+#card-rt h5{
+    font-size: 14px;
+    font-family: "gilroy";
+    font-weight: 600; 
+    background-color: #c4e9e6;
+    margin-top: 7px;
+}
+#skills{
+    width: 100;
+    height: 50%;
+}
+#skills h2{
+    font-size: 15px;
+    font-family: "gilroy";
+    margin-top: 10px;
+    font-weight: 600;
+}
+#skills h5{
+    font-size: 12px;
+    font-family: "Mona Sans";
+    font-weight: 600;
+    display: inline-block;
+    padding: 4px 8px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 7px 5px;
+}
+#pg3-rt{
+    height: 100%;
+    width: 50%;
+}
+#pg3-rt img{
+    height: 100%;
+    object-fit: cover;
+}
+
+#page4{
+    height: 100%;
+    width: 100%;
+    padding: 0 150px;
+}
+#page4 >h1{
+    font-size: 50px;
+    font-family: "Mona Sans";
+    margin-bottom: 60px;
+}
+#page4 #pg4-row{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+}
+#pg4-row .elem4{
+    height: 100%;
+    width: 30%;
+}
+#pg4-row .elem4 h1{
+    font-size: 20px;
+    font-family: "gilroy";
+    font-weight: 600;
+    margin-bottom: 20px;
+} 
+#pg4-row .elem4 p{
+    font-size: 15px;
+    font-family: "Mona Sans";
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+} 
+#page4 #pg4-row2{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 90px;
+}
+#pg4-row2 #pg4-lf{
+    height: 100%;
+    width: 70%;
+    border-radius: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.834);
+    padding: 30px;
+}
+#pg4-lf h1{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Mona Sans";
+}
+#pg4-lf h3{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "gilroy";
+    margin-top: 55px;
+}
+#pg4-lf h3 span{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "gilroy";
+    opacity: 0.6;
+} 
+#pg4-row2 #pg4-rt{
+    height: 100%;
+    width: 25%;
+    background-color: #E54B4D;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#pg4-rt img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 0.6;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#pg4-row2:hover img{
+    scale: 0.7;
+    rotate: 25deg;
+}
+#page5{
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 20px 150px; 
+
+}
+#page5>h1{
+    font-size: 60px;
+    font-family: "Source Serif 4";
+    font-weight: 500;
+    line-height: 70px;
+    margin-bottom: 40px;
+}
+#pg5-row{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#pg5-row #pg5-lf{
+    height: 100%;
+    width: 50%;
+    text-align: left;
+    padding-right: 50px;
+}
+#pg5-lf .elem5{
+    margin: 100px 0;
+}
+#pg5-lf h1{
+    font-family: gilroy;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: #E6FBFE;
+    width: fit-content;
+}
+#pg5-lf p{
+    font-size: 15px;
+    font-family: "Mona Sans";
+    font-weight: 600;
+    line-height: 25px;
+}
+#pg5-row #pg5-rt{
+    height: 100%;
+    width: 50%;
+}
+#pg5-rt img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+#page6{
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#page6 h1{
+    font-size: 45px;
+    font-family: "Mona Sans";
+    font-weight: 900;
+    padding-left: 150px;
+}
+#page6 #pg6-row{
+    height: 35vh;
+    width: 100%;
+    white-space: nowrap;
+    margin-left: -13%;
+    margin-top: 50px;
+
+}
+#page6 #pg6-row2{
+    height: 35vh;
+    width: 100%;
+    white-space: nowrap;
+    margin-top: 50px;
+
+}
+#page6 .elem6{
+    height: 100%;
+    width: 24%;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+#page6 .elem6 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#page6 .elem6 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+#page7{
+    width: 100%;
+    min-height: 100%;
+}
+#pg7-row{
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 150px;
+}
+.elem7 {
+    height: 100%;
+    width: 50%;
+    border-radius: 50px;
+    background-color: #F8F7F4;
+    padding: 60px;
+}
+.elem7 h3{
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #B3FBE3;
+    border-radius: 50px;
+    font-family: "Source Serif 4";
+    font-weight: 500;
+    font-size: 17px;
+}
+.elem7 #pink{
+    background-color: #FFABE7;
+}
+
+.elem7 h1{
+    font-size: 50px;
+    font-family: "Mona Sans";
+    margin-top: 30px;
+    
+}
+.elem7 p{
+    font-size: 18px;
+    font-family: "Mona Sans";
+    font-weight: 600;
+    margin: 25px 0;
+    line-height: 30px;
+}
+.elem7 button{
+    padding: 18px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+.elem7 .pg7-btn{
+    background-color: #fff;
+    color: black;
+}
+#pg7-row2{
+    height: 75vh;
+    width: 100%;
+    background-color: #FFDA79;
+    text-align: center;
+    margin-top: 70px;
+}
+#pg7-row2 h1{
+    font-family: "Source Serif 4";
+    font-size: 65px;
+    font-weight: 500;
+    padding-top: 110px;
+}
+#pg7-row2 p{
+    font-size: 20px;
+    font-family: "Mona Sans";
+    font-weight: 600;
+    margin: 40px 0;
+}
+#pg7-row2 p span{
+    text-decoration: underline;
+    margin-left: 5px;
+}
+#pg7-row2 button{
+    padding: 18px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+#pg7-row2  .pg7-btn{
+    background-color: #fff;
+    color: black;
+}
+#page8{
+    height: 65%;
+    width: 100%;
+}
+#page8 #slider2{
+    height: 40%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+#page8 #slider2::-webkit-scrollbar{
+    display: none;
+}
+#slider2 .parts{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name:scroller ;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#slider2:hover .parts{
+    animation-play-state: paused;
+}
+#slider2 .elem8{
+    height: 100%;
+    width: 17%;
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 3px -3px    #a6faf3 , 5px -5px   #f4cffa;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#slider2 .elem8:hover{
+    box-shadow: 6px -6px    #a6faf3, 10px -10px   #f4cffa;
+}
+.elem8 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#footer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+    margin-top: 50px;
+}
+#footer img{
+    height: 60px;
+}
+#foot-centre a{
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 600;
+}
+
+#foot-right i{
+    color: black;
+    font-size: 25px;
+}
+#footer2{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding:  150px 150px 0;
+}
+#footer2 a{
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+}
