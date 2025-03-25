@@ -1,6 +1,6 @@
 # 🎨 Dribble Clone (Version-2023)
 
-Welcome to **Dribbble Clone (2023 Version)**, a visually stunning platform for designers and creatives to showcase their work, get inspired, and engage with the community.
+Welcome to **Dribble Clone (2023 Version)**, a visually stunning platform for designers and creatives to showcase their work, get inspired, and engage with the community.
 
 ## 🚀 Features
 - 🖌️ **Beautiful UI** inspired by Dribbble
